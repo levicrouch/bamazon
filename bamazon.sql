@@ -5,41 +5,41 @@ CREATE DATABASE bamazon;
 USE bamazon;
 
 CREATE TABLE products (
- item_id INT NOT NULL AUTO_INCREMENT,
+ id INT NOT NULL AUTO_INCREMENT,
  product_name VARCHAR(255) NOT NULL,
  department_name VARCHAR(255) NOT NULL,
  price DECIMAL(10,2) NOT NULL,
  stock_quantity INTEGER NOT NULL,
- PRIMARY KEY (item_id)
+ PRIMARY KEY (id)
 );
 
 -- Seed data
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
-VALUES ("Bowling Ball", "Sporting Goods", 159.99, 56);
+VALUES ("Frying Pan", "Cookware", 59.99, 56);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
-VALUES ("Rain Bird Anti-Siphon Jar Top Anti-Siphon Valve", "Home Improvement", 15.99, 36);
+VALUES ("Spicey Spice Pack", "Grocery", 9.99, 36);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
-VALUES ("Rain Bird XBD-80 Xeri 8-Outlet 1/4-Inch Drip Manifold", "Home Improvement", 18.38, 78);
+VALUES ("Spatula", "Kitchen", 2.99, 78);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
-VALUES ("Rain Bird SW10-30PS Drip Irrigation Spot Watering Dripper/Emitter", "Home Improvement", 7.80, 98);
+VALUES ("Professional Mixer", "Kitchen Electronics", 399.99, 98);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
-VALUES ("Rain Bird T22-250S Drip Irrigation Tubing", "Home Improvement", 14.98, 26);
+VALUES ("8 Setting Silverware Set", "Kitchen", 89.99, 26);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
 VALUES ("Samsung SSD 1 TB", "Electronics", 249.99, 108);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
-VALUES ("Blu-Ray Movie Blade Runner 2049", "Entertainment", 24.99, 156);
+VALUES ("12 Quart Sauce Pan", "Cookware", 34.95, 156);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
-VALUES ("Blu-Ray Movie American Made", "Entertainment", 19.96, 146);
+VALUES ("30 Quart Stock Pot", "Cookware", 199.99, 146);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
-VALUES ("Blu-Ray Movie Dunkirk", "Entertainment", 22.99, 157);
+VALUES ("Stainless Steel Cheese Grater", "Kitchen", 15.99, 157);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
-VALUES ("Blu-Ray Movie IT", "Entertainment", 24.99, 108);
+VALUES ("BAM! Cooking with Emeril CookBook", "Books", 24.99, 108);
