@@ -102,7 +102,7 @@ function startUp() {
                         // do math to figure the final cost
                         var total = parseInt(answer.purchase_amount) * chosenItem.price;
                         // log the amount purchased
-                        console.log("Thank You for your order, you have been charged: " + total + " for: " +
+                        console.log("Thank You for your order, you have been charged: " + total.toFixed(2) + " for: " +
                             answer.purchase_amount + " " + chosenItem.product_name + "(s)");
                         connection.end();
                     });

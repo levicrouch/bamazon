@@ -30,7 +30,7 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("8 Setting Silverware Set", "Kitchen", 89.99, 26);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
-VALUES ("Samsung SSD 1 TB", "Electronics", 249.99, 108);
+VALUES ("Sweet Spice Pack", "Grocery", 9.99, 108);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
 VALUES ("12 Quart Sauce Pan", "Cookware", 34.95, 156);

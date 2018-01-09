@@ -1,7 +1,7 @@
 # bamazon
 
 ## Overview:
-What is BAMazon you ask? Some say it is simply a knock-off on Amazon <img src="images/amazonlogo.png"> for use by students to learn MySQL by reading and setting data via a pseudo-store front. By I have it on good authority that BAMazon is actually where Emeril Lagassi shops for his restaurants.
+What is BAMazon you ask? Some say it is simply a knock-off on Amazon <img src="images/amazonLogo.png"> for use by students to learn MySQL by reading and setting data via a pseudo-store front. By I have it on good authority that BAMazon is actually where Emeril Lagassi shops for his restaurants.
 
 This application runs on node and uses the "mysql" and "inquirer" packages to provide the backend and UI. This application is the customer facing portion which provides a store-front for users to shop for food related items. The user will be presented with a list of 10 items available for purchase, they will select the item and enter the amout to purchase. If there is enough of that item in stock, they will be allowed to proceed with the purchase. If there are not enough items in stock, the user will be notified and allowed to adjust the amount they would like to purchase.
 
@@ -20,14 +20,21 @@ This application runs on node and uses the "mysql" and "inquirer" packages to pr
 * From your MySQL client application -or- MySQL Workbench, open bamazon.sql
 * Execute the SQL script to create the database, table, columns and row data for the application
 * Verify installation by executing:
-    * <pre><code>USE bamazon;
-    * SELECT * FROM products;</pre></code>
+    * <pre><code>USE bamazon;</pre></code>
+    * <pre><code>SELECT * FROM products;</pre></code>
 
 ## Application Usage:
-* Once <pre><code>node bamazonCustomer.js</pre></code> has been executed, the user will be prompted to enter a username and password to connect to their local MySQL instance.
-    * <img src="images/sqlusername.png">
+* Once node 'bamazonCustomer.js' has been executed, the user will be prompted to enter a username and password to connect to their local MySQL instance.
+    * <img src="images/sqlUserName.png">
 * Once connected to the local MySQL instance, the user is presented with a list of items for purchase.
-    * <img src="images/shoppinglist.png">
+    * <img src="images/shoppingList.png">
 * The user will move the arrow key up and and down to select the item they wish to purchase
 * Press enter to choose a given item
-* The user is then prompted
+* The user then enters the amount they would like to purchase
+* If there are enough items in stock, the user is charged for all items purchased
+    * <img src="images/orderConfirmation.png">
+* If there are not enough items in stock, the user is presented with the main screen to attempt the purchase once again. A message shows the user how many items remain so that they can be successful in placing their order.
+    * <img src="images/outOfStock.png">
+
+## Technical Notes:
+Typically a production application wouldn't have an option to enter the username and password of the SQL instance presented to the user. This functionality was intentionally used to provide the person grading this project the ability to enter their credentials to their own MySQL instance without having to modify the code directly. 
