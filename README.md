@@ -8,23 +8,23 @@ This application runs on node and uses the "mysql" and "inquirer" packages to pr
 ## Setup Instructions:
 
 ### Node Setup:
-* Clone the repository to your local drive (https://github.com/levicrouch/bamazon.git "bamazon repository")
-* Node must be installed, 8.9.4 or greater - (https://nodejs.org/en/download/ "Node download page")
+* Clone the [repository] (https://github.com/levicrouch/bamazon.git) to your local drive 
+* Node must be installed, [8.9.4 or greater] (https://nodejs.org/en/download/)
 * From the command-line install the dependent packages via the following command:
-    * <pre><code>npm install</pre><code>
+    * `npm install`
 * Execute the application:
-    * <pre><code>node bamazonCustomer.js</pre></code>
+    * `node bamazonCustomer.js`
 
 ### MySQL Setup:
-* Install MySQL server (https://www.mysql.com/downloads/ "MySQL Downloads")
+* Install [MySQL server] (https://www.mysql.com/downloads/)
 * From your MySQL client application -or- MySQL Workbench, open bamazon.sql
 * Execute the SQL script to create the database, table, columns and row data for the application
 * Verify installation by executing:
-    * <pre><code>USE bamazon;</pre></code>
-    * <pre><code>SELECT * FROM products;</pre></code>
+    * `USE bamazon;`
+    * `SELECT * FROM products;`
 
 ## Application Usage:
-* Once node 'bamazonCustomer.js' has been executed, the user will be prompted to enter a username and password to connect to their local MySQL instance.
+* Once node `bamazonCustomer.js has been executed, the user will be prompted to enter a username and password to connect to their local MySQL instance.
     * <img src="images/sqlUserName.png">
 * Once connected to the local MySQL instance, the user is presented with a list of items for purchase.
     * <img src="images/shoppingList.png">
