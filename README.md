@@ -8,15 +8,15 @@ This application runs on node and uses the "mysql" and "inquirer" packages to pr
 ## Setup Instructions:
 
 ### Node Setup:
-* Clone the [repository] (https://github.com/levicrouch/bamazon.git) to your local drive 
-* Node must be installed, [8.9.4 or greater] (https://nodejs.org/en/download/)
+* Clone the [repository](https://github.com/levicrouch/bamazon.git) to your local drive 
+* Node must be installed, [8.9.4 or greater](https://nodejs.org/en/download/)
 * From the command-line install the dependent packages via the following command:
     * `npm install`
 * Execute the application:
     * `node bamazonCustomer.js`
 
 ### MySQL Setup:
-* Install [MySQL server] (https://www.mysql.com/downloads/)
+* Install [MySQL server](https://www.mysql.com/downloads/)
 * From your MySQL client application -or- MySQL Workbench, open bamazon.sql
 * Execute the SQL script to create the database, table, columns and row data for the application
 * Verify installation by executing:
